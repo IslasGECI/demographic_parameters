@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: islasgeci/templater:latest
+    image: islasgeci/demographic_parameters:latest
     command: bash
     volumes:
       - $PWD:/workdir

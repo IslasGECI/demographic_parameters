@@ -1,5 +1,5 @@
-Package: templater
-Title: Template for R projects
+Package: demographic.parameters
+Title: Parametros demograficos de poblaciones
 Authors@R: c(
     person(given = "Ciencia de Datos",
            family = "GECI",
@@ -7,7 +7,7 @@ Authors@R: c(
            email = "ciencia.datos@islas.org.mx"
            ))
 Config/testthat/edition: 3
-Description: Plantilla de Ciencia de Datos en GECI para proyectos en R
+Description: R tools for the calculate of demopgraphic parameters: breeding success, hatching success, fledgling success, etc.
 Encoding: UTF-8
 Imports:
     R6,
@@ -15,7 +15,7 @@ Imports:
 LazyData: true
 License: AGPL-3.0-or-later
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.1
 Suggests:
     devtools,
     roxygen2,
