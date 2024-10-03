@@ -1,0 +1,56 @@
+Fecha,Hora,Isla,Especie,Nombre_cientifico,Nombre_o_ID_del_sitio_o_colonia,ID_del_nido_o_madriguera,ID_del_anillo,Tipo_de_censo,Cantidad_nidos,Cantidad_huevos,Cantidad_pollos,Cantidad_pollos_adultos,Cantidad_pollos_juveniles,Cantidad_pollos_fase_I,Cantidad_pollos_fase_II,Cantidad_pollos_fase_III,Cantidad_pollos_fase_IV,Cantidad_pollos_volanton,Comentarios_o_notas,Observador,Capturista
+01/May/2015,00:00:00,Asuncion,Cormorán de brandt,Phalacrocorax penicillatus,Zona A,NA,NA,Terrestre,20,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,SHR-OHS-GMB-SFF,NA
+21/May/2015,00:00:00,Asuncion,Pelícano café,Pelecanus occidentalis,Zona A,NA,NA,Terrestre,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,GMB-SHR,NA
+11/Jul/2015,00:00:00,Todos Santos Sur,Cormorán orejón,Phalacrocorax auritus,19,NA,NA,Terrestre,0,0,5,2,NA,NA,NA,NA,NA,NA,Se observó a un volanton llegando a la colonia.,JM-AA,NA
+11/Abr/2015,00:00:00,Todos Santos Sur,Pelícano café,Pelecanus occidentalis,1,NA,NA,Terrestre,239,0,NA,NA,NA,NA,NA,NA,NA,NA,Conteo directo. La mayoría de los nidos son ocupados por adultos incubando (o en posición de incubar). Ya se observan algunos pollos ( en no mas de 10 nidos).,AHR-JM,NA
+26/Abr/2015,00:00:00,Todos Santos Sur,Pelícano café,Pelecanus occidentalis,1,NA,NA,Terrestre,177,0,237,NA,NA,NA,NA,NA,NA,NA,Conteo directo. La mayoría de los nidos tienen pollos y pollos con plumon. Pocos con adulto incubando.,AHR-JM,NA
+09/May/2015,00:00:00,Todos Santos Sur,Pelícano café,Pelecanus occidentalis,1,NA,NA,Terrestre,124,0,276,NA,NA,NA,NA,NA,NA,NA,NA,AHR,NA
+24/May/2015,00:00:00,Todos Santos Sur,Pelícano café,Pelecanus occidentalis,1,NA,NA,Terrestre,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,"Conteo directo, la mayoria de los nidos tienen pollos con plumon. Los pollos ya no permanecen en los nidos. Muchos de los nidos estan decadencia.",JM,NA
+01/Jun/2015,00:00:00,Todos Santos Sur,Pelícano café,Pelecanus occidentalis,1,NA,NA,Terrestre,18,0,271,38,NA,NA,NA,NA,NA,NA,Conteo directo. Solo se observó un nido con adulto incubando. En pocos hay pollos dentro del nido. 90 % volantones en guarderias.,AHR,NA
+28/Mar/2017,00:00:00,Asuncion,Pelícano café,Pelecanus occidentalis,Toda la isla,NA,NA,Terrestre,73,NA,0,73,NA,0,0,0,NA,NA,NA,USER,NA
+11/Abr/2017,00:00:00,Asuncion,Pelícano café,Pelecanus occidentalis,Norte 1,NA,NA,Terrestre,6,NA,0,6,NA,0,0,0,NA,NA,NA,USER,NA
+15/Abr/2017,00:00:00,Asuncion,Pelícano café,Pelecanus occidentalis,Norte 1,NA,NA,Terrestre,6,NA,0,6,NA,0,0,0,NA,NA,NA,USER,NA
+15/Abr/2017,00:00:00,Asuncion,Pelícano café,Pelecanus occidentalis,Norte 2,NA,NA,Terrestre,22,NA,0,22,NA,0,0,0,NA,NA,NA,USER,NA
+15/Abr/2017,00:00:00,Asuncion,Pelícano café,Pelecanus occidentalis,Norte 3,NA,NA,Terrestre,22,NA,0,22,NA,0,0,0,NA,NA,NA,USER,NA
+15/Abr/2017,00:00:00,Asuncion,Pelícano café,Pelecanus occidentalis,Ladera Este,NA,NA,Terrestre,14,NA,0,14,NA,0,0,0,NA,NA,NA,USER,NA
+15/Abr/2017,00:00:00,Asuncion,Pelícano café,Pelecanus occidentalis,Ladera Oeste,NA,NA,Terrestre,19,NA,0,19,NA,0,0,0,NA,NA,NA,USER,NA
+15/Abr/2017,00:00:00,Asuncion,Pelícano café,Pelecanus occidentalis,Sur 1,NA,NA,Terrestre,5,NA,0,5,NA,0,0,0,NA,NA,NA,USER,NA
+15/Abr/2017,00:00:00,Asuncion,Pelícano café,Pelecanus occidentalis,Sur 2,NA,NA,Terrestre,27,NA,0,27,NA,0,0,0,NA,NA,NA,USER,NA
+15/Abr/2017,00:00:00,Asuncion,Pelícano café,Pelecanus occidentalis,Sur 3,NA,NA,Terrestre,7,NA,0,7,NA,0,0,0,NA,NA,NA,USER,NA
+22/Abr/2017,00:00:00,Asuncion,Pelícano café,Pelecanus occidentalis,Norte 1,NA,NA,Terrestre,6,NA,4,7,NA,3,1,0,NA,NA,NA,USER,NA
+22/Abr/2017,00:00:00,Asuncion,Pelícano café,Pelecanus occidentalis,Norte 2,NA,NA,Terrestre,21,NA,9,23,NA,9,0,0,NA,NA,NA,USER,NA
+22/Abr/2017,00:00:00,Asuncion,Pelícano café,Pelecanus occidentalis,Norte 3,NA,NA,Terrestre,21,NA,0,22,NA,0,0,0,NA,NA,NA,ACU-JLA,NA
+22/Abr/2017,00:00:00,Asuncion,Pelícano café,Pelecanus occidentalis,Ladera Este,NA,NA,Terrestre,14,NA,0,14,NA,NA,NA,NA,NA,NA,NA,ACU-JLA,NA
+22/Abr/2017,00:00:00,Asuncion,Pelícano café,Pelecanus occidentalis,Ladera Oeste,NA,NA,Terrestre,21,NA,3,25,NA,3,NA,NA,NA,NA,NA,ACU-JLA,NA
+22/Abr/2017,00:00:00,Asuncion,Pelícano café,Pelecanus occidentalis,Sur 1,NA,NA,Terrestre,8,NA,0,10,NA,NA,NA,NA,NA,NA,NA,ACU-JLA,NA
+22/Abr/2017,00:00:00,Asuncion,Pelícano café,Pelecanus occidentalis,Sur 2,NA,NA,Terrestre,45,NA,0,62,NA,NA,NA,NA,NA,NA,NA,ACU-JLA,NA
+22/Abr/2017,00:00:00,Asuncion,Pelícano café,Pelecanus occidentalis,Sur 3,NA,NA,Terrestre,10,NA,0,10,NA,NA,NA,NA,NA,NA,NA,ACU-JLA,NA
+19/May/2016,00:00:00,San Benito Medio,Cuervo común,Corvus corax,Toda la isla,NA,NA,Terrestre,2,NA,NA,2,NA,NA,NA,NA,NA,NA,se tiene ubicados dos nidos no se observo mucha actividad,JNJ,NA
+22/May/2016,00:00:00,San Benito Este,Gaviota occidental,Larus occidentalis,Toda la isla,NA,NA,Terrestre,30,0,0,1618,NA,NA,NA,NA,NA,NA,Aun no se ponen huevos solo se han observado nidos estructurados/ se contabilizaron al azar un total de 30 nidos en la isla/ algunas ya se portan agresivas a la presencia intrusa,JNJ,NA
+22/May/2016,00:00:00,San Benito Este,Cormorán orejón,Phalacrocorax auritus,Toda la isla,NA,NA,Terrestre,3,6,NA,10,NA,NA,NA,NA,NA,NA,Se observaron tres nidos visibles con dos huevos blanco/verduzco,JNJ,NA
+02/May/2016,00:00:00,San Benito Este,Águila pescadora,Pandion haliaetus,Toda la isla,NA,NA,Terrestre,2,NA,NA,5,NA,NA,NA,NA,NA,NA,se ubicaron tres nidos establecidos de deficil acceso,JNJ,NA
+22/May/2016,00:00:00,San Benito Este,Cormorán de brandt,Phalacrocorax penicillatus,Toda la isla,NA,NA,Terrestre,15,NA,7,70,NA,NA,NA,NA,NA,NA,se observaron dos grupos en dos rocas/ ambas presentan pollos de mas de un mes de nacido/ presentan plumas ya de adulto,JNJ,NA
+25/May/2016,00:00:00,San Benito Medio,Gaviota plomiza,Larus heermanni,Toda la isla,NA,NA,Terrestre,66,19,3,361,NA,NA,NA,NA,NA,NA,Se observaron los primeros pollos color blanco con manchones negros en la cabeza/ 3 pollos visibles,JNJ,NA
+25/May/2016,00:00:00,San Benito Medio,Ostrero americano,Haematopus palliatus,Toda la isla,NA,NA,Terrestre,NA,NA,NA,5,NA,NA,NA,NA,NA,NA,Se observan parejas establecidas pero no hay presencia de huevo,JNJ,NA
+25/May/2016,00:00:00,San Benito Medio,Cormorán orejón,Phalacrocorax auritus,Toda la isla,NA,NA,Terrestre,NA,NA,NA,4,NA,NA,NA,NA,NA,NA,esta especie no se ha visto anidando en la isla SBM,JNJ,NA
+25/May/2016,00:00:00,San Benito Medio,Cormorán de brandt,Phalacrocorax penicillatus,Toda la isla,NA,NA,Terrestre,NA,NA,NA,12,NA,NA,NA,NA,NA,NA,se observo una parvada grande descansando en una roca al final de la isla,JNJ,NA
+25/May/2016,00:00:00,San Benito Medio,Águila pescadora,Pandion haliaetus,N1PANHALSBM,Nido 1,NA,Terrestre,1,0,1,2,NA,NA,NA,NA,NA,NA,El pollo que un queda sigue en crecimiento ya presenta cañones en las alas de vuelo y cabeza,JNJ,NA
+30/May/2016,00:00:00,San Benito Medio,Ostrero negro,Haematopus bachmani,Toda la isla,NA,NA,Terrestre,NA,NA,NA,2,NA,NA,NA,NA,NA,NA,se ha observado parejas establecidas pero aun no hay presencia de nido,JNJ,NA
+25/May/2016,00:00:00,San Benito Medio,Gaviota occidental,Larus occidentalis,Toda la isla,NA,NA,Terrestre,45,3,0,1400,NA,NA,NA,NA,NA,NA,Se encontraron dos nidos uno con un huevo y otro con dos,JNJ,NA
+26/May/2016,00:00:00,San Benito Este,Pelícano café,Pelecanus occidentalis,Toda la isla,NA,NA,Terrestre,37,0,79,39,NA,NA,NA,NA,NA,NA,los pollos estan en creciemiento aun presentan plumon color blanco algunos nidos presentan de tres de dos pollos otros nidos presentan pollos pequeños sin plumas,JNJ,NA
+26/May/2016,00:00:00,San Benito Este,Cormorán orejón,Phalacrocorax auritus,Toda la isla,NA,NA,Terrestre,8,6,0,18,NA,NA,NA,NA,NA,NA,"esta especie esta anidando en los nidos de los PELOCC se ha observado dos huevos en cada nido, algunas parejas se encuentras postradas en el nido sin huevos",JNJ,NA
+26/May/2016,00:00:00,San Benito Este,Cormorán de brandt,Phalacrocorax penicillatus,Toda la isla,NA,NA,Terrestre,26,0,21,69,NA,NA,NA,NA,NA,NA,"existen dos zonas: a) 46 adultos,  20 nidos visibles/ b) 20 adultos,  15 pollos visibles",NA,NA
+26/May/2016,00:00:00,San Benito Este,Águila pescadora,Pandion haliaetus,Toda la isla,NA,NA,Terrestre,3,NA,NA,6,NA,NA,NA,NA,NA,NA,se tiene registro de tres nidos pero son de dificil acceso,JNJ,NA
+26/May/2016,00:00:00,San Benito Este,Halcón peregrino,Falco peregrinus,Toda la isla,NA,NA,Terrestre,1,0,2,2,NA,NA,NA,NA,NA,NA,los pollos siguen en crecimiento,JNJ,NA
+30/May/2016,00:00:00,San Benito Oeste,Gaviota occidental,Larus occidentalis,Toda la isla,NA,NA,Terrestre,25,2,0,160,0,NA,NA,NA,NA,NA,Solo se tienen registrados dos nidos con un huevo cada uno,JNJ,NA
+02/Jun/2016,00:00:00,San Benito Medio,Gaviota occidental,Larus occidentalis,Toda la isla,NA,NA,Terrestre,164,46,0,2988,NA,NA,NA,NA,NA,NA,Ya se observan nidos bien estructurados algunos con un huevo otro con dos y pocos con tres,JNJ,NA
+02/Jun/2016,00:00:00,San Benito Medio,Águila pescadora,Pandion haliaetus,N4PANHALSBM,Nido 4,NA,Terrestre,1,0,1,2,0,NA,NA,NA,NA,NA,El pollo va creciendo ya presenta cañoes con plumaje de juvenil/ aun presenta plumon,JNJ,NA
+02/Jun/2016,00:00:00,San Benito Medio,Águila pescadora,Pandion haliaetus,N3PANHALSBM,Nido 3,NA,Terrestre,1,0,0,1,NA,NA,NA,NA,NA,NA,El nido se encuentra ya vacio incluso destruido pero el adulto aun permanece cerca del nido,JNJ,NA
+02/Jun/2016,00:00:00,San Benito Medio,Águila pescadora,Pandion haliaetus,N1PANHALSBM,Nido 1,NA,Terrestre,1,0,1,1,NA,NA,NA,NA,NA,NA,El pollo sigue creciendo aun presenta plumon y cañones en la espalda con plumaje de juvenil,JNJ,NA
+02/Jun/2016,00:00:00,San Benito Medio,Gaviota plomiza,Larus heermanni,Toda la isla,NA,NA,Terrestre,14,6,2,283,NA,NA,NA,NA,NA,NA,Se monitore la zona A la cual estaba desecha/ se encontraron los nidos destruidos y ya no habia huevos/ algunos huevos abandonados / se observaron individuos volando por todos lados y los pollos que se habian registrado no se encontraron,JNJ,NA
+03/Jun/2016,00:00:00,San Benito Este,Halcón peregrino,Falco peregrinus,N1FALPERSBE,Nido 1,NA,Terrestre,1,0,0,2,2,NA,NA,NA,NA,NA,ya comienzan a volar y salen del nido presentan un plumaje juvenil color marron,JNJ,NA
+04/Jun/2016,00:00:00,San Benito Oeste,Águila pescadora,Pandion haliaetus,N5PANHALSBO,Nido 5,NA,Terrestre,1,0,0,2,2,NA,NA,NA,NA,NA,Aun los alimenta los padres/ los pollos ya vuelan,AMR,NA
+09/Jun/2016,00:00:00,San Benito Oeste,Águila pescadora,Pandion haliaetus,N3PANHALSBO,Nido 3,NA,Terrestre,1,0,2,2,NA,NA,NA,NA,NA,NA,LOS POLLOS PRESENTAN POCO PLUMON Y CAÑONES EN CRECIMIENTO CON PLUMAJE DE JUVENIL/OJOS ROJOS,AMR,NA
+11/Jun/2016,00:00:00,San Benito Este,Gaviota occidental,Larus occidentalis,Toda la isla,NA,NA,Terrestre,133,40,3,4223,0,NA,NA,NA,NA,NA,NA,JNJ,NA
+11/Jun/2016,00:00:00,San Benito Este,Pelícano café,Pelecanus occidentalis,Toda la isla,Zona A,NA,Terrestre,28,0,31,28,NA,NA,NA,NA,NA,NA,los pollos empiezan a salir del nido,JNJ,NA
+13/Jun/2016,00:00:00,San Benito Medio,Águila pescadora,Pandion haliaetus,NIPANHALSBM,Nido 1,NA,Terrestre,1,0,1,2,NA,NA,NA,NA,NA,NA,EL POLLO PRESENTA POCO PLUMON Y PLUMAJE DE JUVENIL EN CASI TODO EL CUERPO,JNJ,NA
