@@ -7,10 +7,7 @@ describe("Select data", {
     expect_equal(obtained_columns, expected_columns)
   })
   it("clean data for hatching success", {
-    print(obtained$Cantidad_huevos)
-    print(!is.na(obtained$Cantidad_huevos))
     is_valid_row <- all(!is.na(obtained$Cantidad_huevos))
-    print(is_valid_row)
     expect_true(is_valid_row)
   })
 })
