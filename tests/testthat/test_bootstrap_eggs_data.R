@@ -29,6 +29,6 @@ describe("Calculate breeding success", {
     print(obtained)
     expected <- nrow(long_egg_data)
     expect_equal(nrow(obtained), expected)
-    # expect_equal(obtained$breeding_success[[1]], 1)
+    expect_equal(obtained$breeding_success[[1]], 1)
   })
 })
