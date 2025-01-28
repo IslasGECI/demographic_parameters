@@ -12,7 +12,7 @@ calculate_breeding_success <- function(long_egg_data) {
   long_egg_data |>
     dplyr::group_by(Temporada) |>
     dplyr::mutate(
-      breeding_success = sum(is_chick_fledged) / dplyr::n()
+      breeding_success = mean(is_chick_fledged)
     ) |>
     dplyr::ungroup()
 }
