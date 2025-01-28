@@ -1,6 +1,7 @@
 describe("set egg data for bootstrapping", {
   raw_egg_data <- readr::read_csv("/workdir/tests/data/breeding_success_for_tests.csv")
   obtained <- set_bootstrap_eggs_data(raw_egg_data)
+  print(obtained$is_chick_fledged)
   it("should return a tibble with number of rows equal to the total laided egss", {
     exected_len <- sum(raw_egg_data$No_eggs)
     expect_equal(nrow(obtained), exected_len)
@@ -9,5 +10,10 @@ describe("set egg data for bootstrapping", {
     expected_chicks_fledged <- sum(raw_egg_data$Number_of_chicks_fledged)
     obtained_chicks_fledged <- sum(obtained$is_chick_fledged)
     expect_equal(obtained_chicks_fledged, expected_chicks_fledged)
+  })
+  it("remove unused columns", {
+    expected_columns <- c("Temporada", "No_eggs", "Number_of_chicks_fledged", "is_chick_fledged")
+    obtained_columns <- colnames(obtained)
+    expected_true(all(obtained_columns %in% expected_columns))
   })
 })
