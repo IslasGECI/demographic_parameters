@@ -1,3 +1,12 @@
+describe("get bootstraped season parameter", {
+  it("should return a positive value", {
+    B <- 10
+    raw_egg_data <- readr::read_csv("/workdir/tests/data/breeding_success_for_tests.csv")
+    obtained <- get_bootstraped_season_parameter_distribution(raw_egg_data, B = B)
+    expect_true(nrow(obtained), B)
+  })
+})
+
 describe("set egg data for bootstrapping", {
   raw_egg_data <- readr::read_csv("/workdir/tests/data/breeding_success_for_tests.csv")
   obtained <- set_bootstrap_eggs_data(raw_egg_data)
