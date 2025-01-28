@@ -14,6 +14,6 @@ describe("set egg data for bootstrapping", {
   it("remove unused columns", {
     expected_columns <- c("Temporada", "No_eggs", "Number_of_chicks_fledged", "is_chick_fledged")
     obtained_columns <- colnames(obtained)
-    expected_true(all(obtained_columns %in% expected_columns))
+    expect_true(all(obtained_columns %in% expected_columns))
   })
 })
