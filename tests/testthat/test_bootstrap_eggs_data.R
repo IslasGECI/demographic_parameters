@@ -16,3 +16,17 @@ describe("set egg data for bootstrapping", {
     expect_true(all(obtained_columns %in% expected_columns))
   })
 })
+
+describe("Calculate breeding success", {
+  it("Rows are equal to long table", {
+    long_egg_data <- tibble::tibble(
+      Temporada = c(2016, 2016, 2017, 2017, 2018, 2018, 2018),
+      No_eggs = c(2, 2, 2, 2, 3, 3, 3),
+      Number_of_chicks_fledged = c(2, 2, 0, 0, 2, 2, 2),
+      is_chick_fledged = c(1, 1, 0, 0, 1, 1, 0)
+    )
+    obtained <- calculate_breeding_success(long_egg_data)
+    expected <- nrow(long_egg_data)
+    expect_equal(nrow(obtained), expected)
+  })
+})
