@@ -7,11 +7,11 @@ jobs:
     - name: Copia repositorio
       uses: actions/checkout@main
     - name: Construye imagen
-      run: docker build --tag islasgeci/clean_camera_data --tag islasgeci/clean_camera_data:${GITHUB_SHA:0:4} .
+      run: docker build --tag islasgeci/demographic_parameters --tag islasgeci/demographic_parameters:${GITHUB_SHA:0:4} .
     - name: Verifica el formato
-      run: docker run islasgeci/clean_camera_data make check
+      run: docker run islasgeci/demographic_parameters make check
     - name: Corre pruebas y evalúa cobertura
-      run: docker run islasgeci/clean_camera_data make coverage
+      run: docker run islasgeci/demographic_parameters make coverage
     - name: Create/Update tag
       uses: rickstaa/action-create-tag@main
       with:
