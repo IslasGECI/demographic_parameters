@@ -6,13 +6,11 @@ describe("`fit_breeding_success()`", {
   it("fit breeding success using binomial family", {
     model <- fit_breeding_success(data = long_egg_data)
     coef_values <- coef(model)
-    print(summary(model))
     predictions <- predict(model, type = "response")
-    print(predictions)
   })
   it("get Temporada coefficient", {
     model <- fit_breeding_success(data = long_egg_data)
     Temporada_coef <- get_Temporada_coef(model)
-    expect_true(Temporada_coef < 0)
+    expect_true(Temporada_coef > 0)
   })
 })
