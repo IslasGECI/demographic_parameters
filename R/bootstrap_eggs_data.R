@@ -13,3 +13,11 @@ set_bootstrap_eggs_data <- function(raw_egg_data) {
     tidyr::unnest(is_chick_fledged) |>
     dplyr::select(Temporada, No_eggs, Number_of_chicks_fledged, is_chick_fledged)
 }
+
+.add_chick_status <- function(rowwise_egg_data) {
+  rowwise_egg_data |>
+    dplyr::mutate(
+      is_chick_fledged = list(c(rep(1, Number_of_chicks_fledged), rep(0, No_eggs - Number_of_chicks_fledged)))
+    ) |>
+    tidyr::unnest(is_chick_fledged)
+}
