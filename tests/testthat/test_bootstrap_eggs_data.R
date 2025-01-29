@@ -3,7 +3,7 @@ describe("get bootstraped season parameter", {
     B <- 10
     raw_egg_data <- readr::read_csv("/workdir/tests/data/breeding_success_for_tests.csv")
     obtained <- get_bootstraped_season_parameter_distribution(raw_egg_data, B = B)
-    expect_true(nrow(obtained), B)
+    expect_equal(length(obtained), B)
   })
 })
 
@@ -35,7 +35,6 @@ describe("Calculate breeding success", {
       is_chick_fledged = c(1, 1, 0, 0, 1, 0, 0)
     )
     obtained <- calculate_breeding_success(long_egg_data)
-    print(obtained)
     expected <- nrow(long_egg_data)
     expect_equal(nrow(obtained), expected)
     expect_equal(obtained$breeding_success[[1]], 1)
