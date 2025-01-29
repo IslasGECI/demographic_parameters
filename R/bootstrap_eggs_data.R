@@ -18,3 +18,17 @@ set_bootstrap_eggs_data <- function(raw_egg_data) {
     ) |>
     tidyr::unnest(is_chick_fledged)
 }
+
+R6::R6Class("Distribution",
+  public = list(
+    initialize = function(data) {
+      self$data <- data
+    },
+    raw = function() {
+      return(self$data)
+    },
+    sample = function() {
+      dplyr::sample_frac(self$data, replace = TRUE)()
+    }
+  )
+)
