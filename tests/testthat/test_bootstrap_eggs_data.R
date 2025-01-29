@@ -11,6 +11,17 @@ describe("get bootstraped season parameter", {
   })
 })
 
+describe("Calculate p-value from distribution", {
+  it("Calculate basic probability", {
+    season_parameter_distribution <- c(-0.1, -0.2, -0.3, -0.4, -0.5, -0.6, -0.7, -0.8, -0.9, -0.98, 0.7)
+    obtained <- calculate_p_values(season_parameter_distribution)
+    p_value_decreasing <- 10 / 11
+    p_value_increasing <- 1 / 11
+    expected <- list("p_value_decreasing" = p_value_decreasing, "p_value_increasing" = p_value_increasing)
+    expect_equal(obtained, expected)
+  })
+})
+
 describe("set egg data for bootstrapping", {
   raw_egg_data <- readr::read_csv("/workdir/tests/data/breeding_success_for_tests.csv", show_col_types = FALSE)
   obtained <- set_bootstrap_eggs_data(raw_egg_data)
