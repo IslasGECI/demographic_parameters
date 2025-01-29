@@ -4,6 +4,10 @@ describe("get bootstraped season parameter", {
     raw_egg_data <- readr::read_csv("/workdir/tests/data/breeding_success_for_tests.csv", show_col_types = FALSE)
     obtained <- get_bootstraped_season_parameter_distribution(raw_egg_data, B = B)
     expect_equal(length(obtained), B)
+    expected_first_value <- -0.8856786
+    expected_last_value <- -0.2470413
+    expect_equal(obtained[[1]], expected_first_value)
+    expect_equal(obtained[[B]], expected_last_value)
   })
 })
 
