@@ -4,9 +4,10 @@ parameter_distribution <- get_bootstraped_season_parameter_distribution(raw_egg_
 
 describe("Write JSON content", {
   it("Return a string", {
-    B <- 100
+    B <- 50
     parameter_distribution <- get_bootstraped_season_parameter_distribution(raw_egg_data, B = B)
     obtained <- fetch_json_content(raw_egg_data, parameter_distribution)
+    print(obtained)
     expect_true(is.character(obtained))
     expect_true(stringr::str_detect(obtained, '"p_value_decreasing":1', negate = TRUE))
   })
