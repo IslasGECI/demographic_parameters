@@ -1,6 +1,7 @@
 get_bootstraped_season_parameter_distribution <- function(raw_egg_data, B) {
   long_data <- set_bootstrap_eggs_data(raw_egg_data)
-  comprehenr::to_vec(for (i in 1:B) get_Temporada_coef(dplyr::sample_frac(long_data, replace = TRUE)))
+  resampled_data <- comprehenr::to_list(for (i in 1:B) dplyr::sample_frac(long_data, replace = TRUE))
+  comprehenr::to_vec(for (sample in resampled_data) get_Temporada_coef(sample))
 }
 
 set_bootstrap_eggs_data <- function(raw_egg_data) {
