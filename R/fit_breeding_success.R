@@ -4,3 +4,7 @@ fit_breeding_success <- function(data) {
 get_Temporada_coef <- function(model) {
   coef(model)["Temporada"]
 }
+XXget_Temporada_coef <- function(data) {
+  model <- fit_breeding_success(data)
+  coef(model)["Temporada"]
+}
