@@ -1,14 +1,14 @@
 describe("get bootstraped season parameter", {
   it("should return a positive value", {
     B <- 10
-    raw_egg_data <- readr::read_csv("/workdir/tests/data/breeding_success_for_tests.csv")
+    raw_egg_data <- readr::read_csv("/workdir/tests/data/breeding_success_for_tests.csv", show_col_types = FALSE)
     obtained <- get_bootstraped_season_parameter_distribution(raw_egg_data, B = B)
     expect_equal(length(obtained), B)
   })
 })
 
 describe("set egg data for bootstrapping", {
-  raw_egg_data <- readr::read_csv("/workdir/tests/data/breeding_success_for_tests.csv")
+  raw_egg_data <- readr::read_csv("/workdir/tests/data/breeding_success_for_tests.csv", show_col_types = FALSE)
   obtained <- set_bootstrap_eggs_data(raw_egg_data)
   it("should return a tibble with number of rows equal to the total laided egss", {
     exected_len <- sum(raw_egg_data$No_eggs)
