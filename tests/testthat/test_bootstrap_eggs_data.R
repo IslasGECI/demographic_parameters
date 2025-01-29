@@ -1,4 +1,5 @@
 raw_egg_data <- readr::read_csv("/workdir/tests/data/breeding_success_for_tests.csv", show_col_types = FALSE)
+B <- 10
 parameter_distribution <- get_bootstraped_season_parameter_distribution(raw_egg_data, B = B)
 
 describe("Write JSON content", {
@@ -10,7 +11,6 @@ describe("Write JSON content", {
 
 describe("get bootstraped season parameter", {
   it("should return a positive value", {
-    B <- 10
     obtained <- get_bootstraped_season_parameter_distribution(raw_egg_data, B = B)
     expect_equal(length(obtained), B)
     expected_first_value <- -0.8856786
