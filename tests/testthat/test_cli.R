@@ -10,7 +10,6 @@ describe("Test cli for breeding success trend", {
     expect_true(testtools::exist_output_file(output_path))
     obtained <- jsonlite::fromJSON(output_path)
     obtained_fields <- names(obtained)
-    print(obtained_fields)
     expected_fields <- c("raw_data", "bootstrap_distribution")
     expect_true(all(obtained_fields %in% expected_fields))
   })
