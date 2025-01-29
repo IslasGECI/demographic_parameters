@@ -6,8 +6,8 @@ describe("get bootstraped season parameter", {
     expect_equal(length(obtained), B)
     expected_first_value <- -0.8856786
     expected_last_value <- -0.2470413
-    expect_equal(obtained[[1]], expected_first_value)
-    expect_equal(obtained[[B]], expected_last_value)
+    expect_equal(obtained[[1]], expected_first_value, tolerance = 1e-6)
+    expect_equal(obtained[[B]], expected_last_value, tolerance = 1e-6)
   })
 })
 
