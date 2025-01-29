@@ -13,6 +13,16 @@ set_bootstrap_eggs_data <- function(raw_egg_data) {
     dplyr::select(Temporada, No_eggs, Number_of_chicks_fledged, is_chick_fledged)
 }
 
+fetch_json_content <- function(raw_egg_data, parameter_distribution) {
+  p_values <- calculate_p_values(parameter_distribution) |>
+    rjson::toJSON()
+  parameter_distribution_string <- parameter_distribution |>
+    rjson::toJSON()
+  raw_egg_data_list <- raw_egg_data |>
+    rjson::toJSON()
+  paste0('{"raw_data":', raw_egg_data_list, ',"bootstrap_distribution":', parameter_distribution_string, ',"p_values":', p_values, "}")
+}
+
 .add_chick_status <- function(rowwise_egg_data) {
   rowwise_egg_data |>
     dplyr::mutate(
