@@ -8,5 +8,9 @@ describe("Test cli for breeding success trend", {
     write_breeding_success_trend(options)
 
     expect_true(testtools::exist_output_file(output_path))
+    obtained <- jsonlite::fromJSON(output_path)
+    obtained_fields <- names(obtained)
+    expected_fields <- c("bootstrap_distribution")
+    expect_true(all(obtained_fields %in% expected_fields))
   })
 })
