@@ -4,7 +4,7 @@ describe("`fit_breeding_success()`", {
     is_chick_fledged = c(1, 0, 0, 0, 1, 1, 1)
   )
   it("get Temporada coefficient", {
-    Temporada_coef <- XXget_Temporada_coef(long_egg_data)
+    Temporada_coef <- get_Temporada_coef(long_egg_data)
     expect_true(Temporada_coef > 0)
   })
 })
