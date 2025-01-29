@@ -1,7 +1,7 @@
 describe("Test cli for breeding success trend", {
   it("Test cli", {
     data_path <- "/workdir/tests/data/breeding_success_for_tests.csv"
-    bootstrap_number <- 10
+    bootstrap_number <- 100
     output_path <- "/workdir/tests/data/breeding_success_trend.json"
     options <- list("data-path" = data_path, "B" = bootstrap_number, "output-path" = output_path)
     testtools::if_exist_remove(output_path)
@@ -10,7 +10,8 @@ describe("Test cli for breeding success trend", {
     expect_true(testtools::exist_output_file(output_path))
     obtained <- jsonlite::fromJSON(output_path)
     obtained_fields <- names(obtained)
-    expected_fields <- c("bootstrap_distribution")
+    print(obtained_fields)
+    expected_fields <- c("raw_data", "bootstrap_distribution")
     expect_true(all(obtained_fields %in% expected_fields))
   })
 })
