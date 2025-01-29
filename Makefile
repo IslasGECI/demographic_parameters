@@ -48,7 +48,7 @@ setup: clean install
 
 red: format
 	Rscript -e "devtools::test(stop_on_failure = TRUE)" \
-	&& git restore test/testthat/*.R \
+	&& git restore tests/testthat/*.R \
 	|| (git add tests/testthat/*.R && git commit -m "🛑🧪 Fail tests")
 	chmod g+w -R .
 
