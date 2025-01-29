@@ -12,12 +12,3 @@ set_bootstrap_eggs_data <- function(raw_egg_data) {
     tidyr::unnest(is_chick_fledged) |>
     dplyr::select(Temporada, No_eggs, Number_of_chicks_fledged, is_chick_fledged)
 }
-
-calculate_breeding_success <- function(long_egg_data) {
-  long_egg_data |>
-    dplyr::group_by(Temporada) |>
-    dplyr::mutate(
-      breeding_success = mean(is_chick_fledged)
-    ) |>
-    dplyr::ungroup()
-}
