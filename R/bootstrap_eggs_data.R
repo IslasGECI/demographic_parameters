@@ -35,3 +35,8 @@ Distributor <- R6::R6Class("Distribution",
     }
   )
 )
+calculate_p_values <- function(season_parameter_distribution) {
+  p_value_decreasing <- sum(season_parameter_distribution < 0) / length(season_parameter_distribution)
+  p_value_increasing <- sum(season_parameter_distribution > 0) / length(season_parameter_distribution)
+  list("p_value_decreasing" = p_value_decreasing, "p_value_increasing" = p_value_increasing)
+}
