@@ -37,7 +37,8 @@ fetch_json_content <- function(raw_egg_data, parameter_distribution, alpha) {
 }
 
 xxget_bootsrap_interval <- function(bootstrap_distribution, alpha) {
-  get_bootsrap_interval(bootstrap_distribution)
+  quantiles <- quantile(bootstrap_distribution, c(alpha / 2, 0.5, 1 - alpha / 2)) |> unname()
+  return(quantiles)
 }
 get_bootsrap_interval <- function(bootstrap_distribution) {
   quantiles <- quantile(bootstrap_distribution, c(0.05, 0.5, 0.95)) |> unname()
