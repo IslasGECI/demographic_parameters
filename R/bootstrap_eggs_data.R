@@ -27,7 +27,8 @@ fetch_json_content <- function(raw_egg_data, parameter_distribution, alpha) {
 }
 
 .get_json_of_interval <- function(parameter_distribution) {
-  interval <- get_bootsrap_interval(parameter_distribution)
+  alpha <- 0.05
+  interval <- xxget_bootsrap_interval(parameter_distribution, alpha)
   .get_json_of_value(interval)
 }
 
