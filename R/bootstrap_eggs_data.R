@@ -14,13 +14,27 @@ set_bootstrap_eggs_data <- function(raw_egg_data) {
 }
 
 fetch_json_content <- function(raw_egg_data, parameter_distribution) {
-  p_values <- calculate_p_values(parameter_distribution) |>
-    rjson::toJSON()
-  parameter_distribution_string <- parameter_distribution |>
-    rjson::toJSON()
+  p_values <- .get_json_of_p_value(parameter_distribution)
+  parameter_distribution_string <- .get_json_of_parameter_distribution(parameter_distribution)
   raw_egg_data_list <- raw_egg_data |>
     rjson::toJSON()
-  paste0('{"raw_data":', raw_egg_data_list, ',"bootstrap_distribution":', parameter_distribution_string, ',"bootstrap_interval": []', ',"p_values":', p_values, "}")
+  interval <- .get_json_of_interval(parameter_distribution)
+  paste0('{"raw_data":', raw_egg_data_list, ',"bootstrap_distribution":', parameter_distribution_string, ',"bootstrap_interval":', interval, ',"p_values":', p_values, "}")
+}
+
+.get_json_of_p_value <- function(parameter_distribution) {
+  p_values <- calculate_p_values(parameter_distribution) |>
+    rjson::toJSON()
+}
+
+.get_json_of_parameter_distribution <- function(parameter_distribution) {
+  parameter_distribution_string <- parameter_distribution |>
+    rjson::toJSON()
+}
+
+.get_json_of_interval <- function(parameter_distribution) {
+  interval <- get_bootsrap_interval(parameter_distribution) |>
+    rjson::toJSON()
 }
 
 get_bootsrap_interval <- function(bootstrap_distribution) {
