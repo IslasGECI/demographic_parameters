@@ -28,7 +28,7 @@ fetch_json_content <- function(raw_egg_data, parameter_distribution, alpha) {
 
 .get_json_of_interval <- function(parameter_distribution) {
   alpha <- 0.05
-  interval <- xxget_bootsrap_interval(parameter_distribution, alpha)
+  interval <- get_bootsrap_interval(parameter_distribution, alpha)
   .get_json_of_value(interval)
 }
 
@@ -37,12 +37,8 @@ fetch_json_content <- function(raw_egg_data, parameter_distribution, alpha) {
     rjson::toJSON()
 }
 
-xxget_bootsrap_interval <- function(bootstrap_distribution, alpha) {
+get_bootsrap_interval <- function(bootstrap_distribution, alpha) {
   quantiles <- quantile(bootstrap_distribution, c(alpha / 2, 0.5, 1 - alpha / 2)) |> unname()
-  return(quantiles)
-}
-get_bootsrap_interval <- function(bootstrap_distribution) {
-  quantiles <- quantile(bootstrap_distribution, c(0.05, 0.5, 0.95)) |> unname()
   return(quantiles)
 }
 
