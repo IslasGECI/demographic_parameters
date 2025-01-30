@@ -18,7 +18,8 @@ fetch_json_content <- function(raw_egg_data, parameter_distribution, alpha) {
   parameter_distribution_string <- .get_json_of_value(parameter_distribution)
   raw_egg_data_list <- .get_json_of_value(raw_egg_data)
   interval <- .get_json_of_interval(parameter_distribution, alpha)
-  paste0('{"raw_data":', raw_egg_data_list, ',"bootstrap_distribution":', parameter_distribution_string, ',"alpha":', alpha, ',"bootstrap_interval":', interval, ',"bootstrap_interval_latex":', "", ',"p_values":', p_values, "}")
+  latex_interval <- .get_json_of_latex_interval(parameter_distribution, alpha)
+  paste0('{"raw_data":', raw_egg_data_list, ',"bootstrap_distribution":', parameter_distribution_string, ',"alpha":', alpha, ',"bootstrap_interval":', interval, ',"bootstrap_interval_latex":', latex_interval, ',"p_values":', p_values, "}")
 }
 
 .get_json_of_p_value <- function(parameter_distribution) {
@@ -35,6 +36,11 @@ fetch_json_content <- function(raw_egg_data, parameter_distribution, alpha) {
   value |>
     rjson::toJSON()
 }
+.get_json_of_latex_interval <- function(parameter_distribution, alpha) {
+  get_bootstrap_interval(parameter_distribution, alpha) |>
+    get_bootstrap_interval_latex()
+}
+
 get_bootstrap_interval_latex <- function(interval) {
   glue::glue("{interval[2]} ({interval[1]} — {interval[3]})")
 }
