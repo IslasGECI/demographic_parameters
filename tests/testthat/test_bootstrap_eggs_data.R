@@ -27,6 +27,12 @@ describe("Give bootstrap interval", {
     obtained <- get_bootsrap_interval(bootstrap_distribution, alpha)
     expect_equal(obtained, c(3, 50, 97))
   })
+  it("Get interval in string", {
+    interval <- c(3, 50, 97)
+    obtained <- get_boostrap_interval_latex(interval)
+    expected <- "50 (3 — 97)"
+    expect_equal(obtained, expected)
+  })
 })
 
 describe("get bootstraped season parameter", {
