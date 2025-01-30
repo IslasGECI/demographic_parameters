@@ -27,7 +27,7 @@ fetch_json_content <- function(raw_egg_data, parameter_distribution, alpha) {
 }
 
 .get_json_of_interval <- function(parameter_distribution, alpha) {
-  interval <- get_bootsrap_interval(parameter_distribution, alpha)
+  interval <- get_bootstrap_interval(parameter_distribution, alpha)
   .get_json_of_value(interval)
 }
 
@@ -39,7 +39,7 @@ get_bootstrap_interval_latex <- function(interval) {
   glue::glue("{interval[2]} ({interval[1]} — {interval[3]})")
 }
 
-get_bootsrap_interval <- function(bootstrap_distribution, alpha) {
+get_bootstrap_interval <- function(bootstrap_distribution, alpha) {
   quantiles <- quantile(bootstrap_distribution, c(alpha / 2, 0.5, 1 - alpha / 2)) |> unname()
   return(quantiles)
 }
