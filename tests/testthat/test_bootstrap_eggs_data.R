@@ -5,7 +5,7 @@ describe("Write JSON content", {
     B <- 50
     parameter_distribution <- get_bootstraped_season_parameter_distribution(raw_egg_data, B = B)
     alpha <- 0.05
-    obtained <- xxfetch_json_content(raw_egg_data, parameter_distribution, alpha)
+    obtained <- fetch_json_content(raw_egg_data, parameter_distribution, alpha)
     expect_true(is.character(obtained))
     expect_true(stringr::str_detect(obtained, '"p_value_decreasing":1', negate = TRUE))
     expected_alpha <- paste0('"alpha":', alpha)
