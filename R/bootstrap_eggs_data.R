@@ -1,4 +1,4 @@
-get_bootstraped_season_parameter_distribution <- function(raw_egg_data, B) {
+get_bootstraped_logistic_growth_rate_distribution <- function(raw_egg_data, B) {
   long_data <- set_bootstrap_eggs_data(raw_egg_data)
   set.seed(42)
   distributor <- Distributor$new(long_data)
