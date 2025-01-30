@@ -38,11 +38,12 @@ fetch_json_content <- function(raw_egg_data, parameter_distribution, alpha) {
 }
 .get_json_of_latex_interval <- function(parameter_distribution, alpha) {
   get_bootstrap_interval(parameter_distribution, alpha) |>
-    get_bootstrap_interval_latex()
+    get_bootstrap_interval_latex() |>
+    rjson::toJSON()
 }
 
 get_bootstrap_interval_latex <- function(interval) {
-  glue::glue("{interval[2]} ({interval[1]} — {interval[3]})")
+  glue::glue("${interval[2]} ({interval[1]} --- {interval[3]})$")
 }
 
 get_bootstrap_interval <- function(bootstrap_distribution, alpha) {
