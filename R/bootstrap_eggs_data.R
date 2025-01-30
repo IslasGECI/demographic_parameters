@@ -20,7 +20,7 @@ fetch_json_content <- function(raw_egg_data, parameter_distribution) {
     rjson::toJSON()
   raw_egg_data_list <- raw_egg_data |>
     rjson::toJSON()
-  paste0('{"raw_data":', raw_egg_data_list, ',"bootstrap_distribution":', parameter_distribution_string, ',"p_values":', p_values, "}")
+  paste0('{"raw_data":', raw_egg_data_list, ',"bootstrap_distribution":', parameter_distribution_string, ',"bootstrap_interval": []', ',"p_values":', p_values, "}")
 }
 
 .add_chick_status <- function(rowwise_egg_data) {
