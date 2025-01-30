@@ -23,6 +23,11 @@ fetch_json_content <- function(raw_egg_data, parameter_distribution) {
   paste0('{"raw_data":', raw_egg_data_list, ',"bootstrap_distribution":', parameter_distribution_string, ',"bootstrap_interval": []', ',"p_values":', p_values, "}")
 }
 
+get_bootsrap_interval <- function(bootstrap_distribution) {
+  quantiles <- quantile(bootstrap_distribution, c(0.05, 0.5, 0.95)) |> unname()
+  return(quantiles)
+}
+
 .add_chick_status <- function(rowwise_egg_data) {
   rowwise_egg_data |>
     dplyr::mutate(
