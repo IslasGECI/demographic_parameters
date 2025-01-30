@@ -12,6 +12,14 @@ describe("Write JSON content", {
   })
 })
 
+describe("Give bootstrap interval", {
+  it("Get interval from distribution", {
+    bootstrap_distribution <- c(1:100)
+    obtained <- get_bootsrap_interval(bootstrap_distribution)
+    expect_equal(obtained, c(5, 50, 95))
+  })
+})
+
 describe("get bootstraped season parameter", {
   it("should return a positive value", {
     B <- 10
