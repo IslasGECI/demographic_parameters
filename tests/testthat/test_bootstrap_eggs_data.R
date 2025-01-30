@@ -12,7 +12,7 @@ describe("Write JSON content", {
     expect_true(stringr::str_detect(obtained, expected_alpha))
     expected_fields <- c("raw_data", "bootstrap_distribution", "bootstrap_interval", "bootstrap_interval_latex", "p_values", "alpha")
     expect_true(all(stringr::str_detect(obtained, expected_fields)))
-    # expect_true(stringr::str_detect(obtained, '"bootstrap_interval_latex":,', negate = TRUE))
+    expect_true(stringr::str_detect(obtained, '"bootstrap_interval_latex":,', negate = TRUE))
   })
 })
 
