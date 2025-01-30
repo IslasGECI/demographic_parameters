@@ -21,6 +21,10 @@ describe("Give bootstrap interval", {
     alpha <- 0.1
     obtained <- xxget_bootsrap_interval(bootstrap_distribution, alpha)
     expect_equal(obtained, c(5, 50, 95))
+
+    alpha <- 0.06
+    obtained <- xxget_bootsrap_interval(bootstrap_distribution, alpha)
+    expect_equal(obtained, c(3, 50, 97))
   })
 })
 
