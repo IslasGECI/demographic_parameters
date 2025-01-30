@@ -7,7 +7,7 @@ describe("Write JSON content", {
     obtained <- fetch_json_content(raw_egg_data, parameter_distribution)
     expect_true(is.character(obtained))
     expect_true(stringr::str_detect(obtained, '"p_value_decreasing":1', negate = TRUE))
-    expected_fields <- c("raw_data", "bootstrap_distribution", "p_values")
+    expected_fields <- c("raw_data", "bootstrap_distribution", "bootstrap_interval", "p_values")
     expect_true(all(stringr::str_detect(obtained, expected_fields)))
   })
 })
