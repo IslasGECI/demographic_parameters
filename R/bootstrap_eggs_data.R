@@ -26,17 +26,9 @@ fetch_json_content <- function(raw_egg_data, parameter_distribution) {
   .get_json_of_value(p_values)
 }
 
-.get_json_of_parameter_distribution <- function(parameter_distribution) {
-  .get_json_of_value(parameter_distribution)
-}
-
 .get_json_of_interval <- function(parameter_distribution) {
   interval <- get_bootsrap_interval(parameter_distribution)
   rjson::toJSON(interval)
-}
-
-.get_json_of_raw_egg_data <- function(raw_egg_data) {
-  rjson::toJSON(raw_egg_data)
 }
 
 .get_json_of_value <- function(value) {
