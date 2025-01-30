@@ -18,7 +18,7 @@ fetch_json_content <- function(raw_egg_data, parameter_distribution) {
   parameter_distribution_string <- .get_json_of_value(parameter_distribution)
   raw_egg_data_list <- .get_json_of_value(raw_egg_data)
   interval <- .get_json_of_interval(parameter_distribution)
-  paste0('{"raw_data":', raw_egg_data_list, ',"bootstrap_distribution":', parameter_distribution_string, ',"bootstrap_interval":', interval, ',"p_values":', p_values, "}")
+  paste0('{"raw_data":', raw_egg_data_list, ',"bootstrap_distribution":', parameter_distribution_string, ',"alpha":', ',"bootstrap_interval":', interval, ',"p_values":', p_values, "}")
 }
 
 .get_json_of_p_value <- function(parameter_distribution) {
