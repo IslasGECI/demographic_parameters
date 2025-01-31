@@ -30,7 +30,7 @@ describe("Give bootstrap interval", {
   it("Get interval in string", {
     interval <- c(3, 50, 97)
     obtained <- get_bootstrap_interval_latex(interval)
-    expected <- "$50 (3 --- 97)$"
+    expected <- "50 (3 --- 97)"
     expect_equal(obtained, expected)
   })
 })
